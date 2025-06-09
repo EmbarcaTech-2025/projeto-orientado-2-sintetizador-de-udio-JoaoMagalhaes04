@@ -12,7 +12,7 @@ Campinas, junho de 2025
 ---
 Este projeto implementa um sistema simples de gravação e reprodução de áudio usando a placa Raspberry Pi Pico com a placa BitDogLab. O áudio é capturado via ADC a partir de um microfone analógico, armazenado em um buffer, e reproduzido por um buzzer utilizando PWM.
 
-Os controles são realizados por dois botões:
+**Os controles são realizados por dois botões:**
 
 - Botão A (GPIO 5) para iniciar a gravação.
 
@@ -26,7 +26,7 @@ LEDs indicam os estados do sistema:
 
 - LED Azul (GPIO 12): reprodução em andamento.
 
-Hardware Utilizado
+**Hardware Utilizado**
 
 - BitDogLab (placa de expansão com botões, LEDs, buzzer, microfone analógico)
 
@@ -40,7 +40,7 @@ Hardware Utilizado
 
 - LEDs conectados aos GPIOs 11 (verde), 12 (azul) e 13 (vermelho)
 
-Funcionalidades
+**Funcionalidades**
 
 - Gravação de áudio digital com taxa de amostragem de 8 kHz e resolução de 8 bits.
 
@@ -52,7 +52,8 @@ Funcionalidades
 
 - Indicação visual via LEDs para diferentes estados.
 
-Estrutura do Código
+**Estrutura do Código**
+
 | Arquivo       | Descrição                                                     |
 | ------------- | ------------------------------------------------------------- |
 | `adc_audio.c` | Captura o áudio via ADC e armazena no buffer.                 |
@@ -63,7 +64,7 @@ Estrutura do Código
 | `controls.h`  | Protótipos e definições de pinos para botões e LEDs.          |
 | `main.c`      | Loop principal: gerencia botões, LEDs, gravação e reprodução. |
 
-Como Usar
+**Como Usar**
 
 - Compile o projeto usando o SDK do Raspberry Pi Pico.
 
